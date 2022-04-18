@@ -1,0 +1,127 @@
+.app{
+  width: auto;
+  height: 100vh;
+  
+}
+
+.app__header{
+  width: 100%;
+  display: flex; 
+  flex-flow: row wrap;
+  height:  50px;
+ // justify-content: space-around;
+  padding: 1rem 1rem;
+
+}
+
+/*.app__header-menu{
+  flex-basis: calc(25% - 20px);
+ 
+  padding-left: 2rem;
+  display: flex;
+  align-items: flex-start;
+ 
+ 
+}*/
+
+
+
+.app__header-title{
+  //display: inline;
+  flex-basis: calc(50% - 10px);
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+
+
+  p{
+      font-family: 'Rochester', cursive;
+      font-size: 20px; 
+      font-weight: 600; 
+     // color: rgb(245, 164, 14); 
+      color:  #dc658b;
+  }
+  
+} 
+
+.app__header-theme {
+  flex-basis: calc(25% - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+
+.app__header-menu {
+  flex-basis: calc(25% - 10px);
+  width: 25px;
+  height: 25px;
+  //border-radius: 50%;
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  //background-color: var(--secondary-color);
+
+
+  svg {
+    width: 20%;
+    height: 100%;
+    color:  #dc658b;
+  }
+
+  div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+
+    padding: 1rem;
+
+    width: 20%;color: black;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+    //background: url('../../assets/bgWhite.png');
+    background-color: var(--white-color);
+    background-size: cover;
+    background-repeat: repeat;
+
+    /* top box shadow */
+    box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+  }
+  
+}
+
+  .menu{
+  position: fixed;
+    top: 150px;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+
+    padding: 1rem;
+
+    width: 200px;
+    height: auto;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+   // background: url('../../assets/bgWhite.png');
+    background-color: var(--white-color);
+    background-size: cover;
+    background-repeat: repeat;
+
+    /* top box shadow */
+    box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+}
